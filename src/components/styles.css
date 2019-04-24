@@ -1,0 +1,53 @@
+.form-group {
+    text-align: center;
+
+}
+
+label {
+    font-style: italic;
+}
+
+button {
+    float: right;
+    text-transform: uppercase;
+	font-weight: bold;
+}
+
+.buttonBg {
+    /* text-transform: lowercase; */
+    background-color: rgba(221, 221, 221, 0);
+    /* Green */
+    border: none;
+    color: rgba(255, 255, 255, 0.205);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font: normal 15px "Tahoma";
+    cursor: pointer;
+    text-shadow: 0 5px 0 black;
+    border-radius: 5px;
+
+
+  }
+
+h3 {
+    font-size: 35px;
+	color: #000;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 15px;
+}
+
+.form-group label>span {
+    font-style: unset;
+}
+
+h3 span {
+    font-style: italic;
+    text-transform: none;
+    color: rgba(54, 54, 54, 0.664);
+    text-shadow: 0 1px 0 black;
+}
+
