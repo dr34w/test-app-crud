@@ -2,7 +2,6 @@
  import axios from 'axios';
  import { Link } from 'react-router-dom';
  import TableRow from './TableRow';
- import Image from './image';
  import './styles.css';
  //import ReactDOM from 'react-dom';
 
@@ -19,7 +18,6 @@ export default class Details extends Component {
                 person_name: '',
                 business_name: '',
                 business_gst_number: '',
-                image: '',
                 currentUser: null,
                 isAdmin: false
             };
@@ -37,8 +35,8 @@ export default class Details extends Component {
                         business: response.data,
                         person_name: response.data.person_name,
                         business_name: response.data.business_name,
-                        business_gst_number: response.data.business_gst_number,
-                        image: response.data.fileInput});
+                        business_gst_number: response.data.business_gst_number
+                    });
                     console.log(response.data);
                     
                 })
@@ -78,10 +76,6 @@ export default class Details extends Component {
                         </div>
                         <div className="form-group">
                             <label>GST Number: <span>{this.state.business_gst_number}</span></label>
-                        </div>
-                        <div className="form-group">
-                            <label>Photo: </label>
-                            <Image></Image>
                         </div>
                         {currentUser &&
                         <div className="button">

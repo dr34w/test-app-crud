@@ -52,3 +52,87 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* FOOTER STYLES */
+
+html, body {
+  font-family: "Roboto",sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #0A0A0A;
+}
+.full-width {
+  width: 100%;
+}
+
+footer > .row {
+  padding: 1em 0;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer .social-links > a:hover {
+  color: #BDBDBD;
+}
+footer .social-links {
+  margin-bottom: 2em;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  padding: 15px;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+
+.gradient-1-bg.animate {
+  background: transparent linear-gradient(117deg, #0069FF, #00CD8D, #0069FF) repeat scroll 0% 0% / 200% 200%;
+
+  -webkit-animation: AnimationName 20s ease-in-out infinite;
+  -moz-animation: AnimationName 20s ease-in-out infinite;
+  animation: AnimationName 20s ease-in-out infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+      background-position: 0% 14%
+  }
+  50% {
+      background-position: 100% 87%
+  }
+  100% {
+      background-position: 0% 14%
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+      background-position: 0% 14%
+  }
+  50% {
+      background-position: 100% 87%
+  }
+  100% {
+      background-position: 0% 14%
+  }
+}
+@keyframes AnimationName {
+  0% {
+      background-position: 0% 14%
+  }
+  50% {
+      background-position: 100% 87%
+  }
+  100% {
+      background-position: 0% 14%
+  }
+}

@@ -9,7 +9,6 @@ import Edit from './components/edit.component';
 import Index from './components/index.component';
 import Details from './components/details.component';
 import Back from "./components/Back";
-import FileInput from "./components/fileInput.component";
 
 import { LoginPage } from '../src/LoginPage/LoginPage';
 import { HomePage } from '../src/HomePage/HomePage';
@@ -80,7 +79,6 @@ logout() {
             <Route path="/edit/:id" component={Edit}></Route>
             <Route path="/index" component={Index}></Route>
             <Route path="/details/:id" component={Details}></Route>
-            <Route path="/fileInput" component={FileInput}></Route>
 
             <Route path="/login" component={LoginPage} />
             <PrivateRoute exact path="/" component={HomePage} /> 
